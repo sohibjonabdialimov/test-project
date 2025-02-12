@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Это описание первой карты."
+    },
+    "image": "/images/card1.jpg"
+  },
+  {
+    "id": 2,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Вторая карта"
+    },
+    "description": {
+      "uz": "Bu ikkinchi karta tavsifi.",
+      "ru": "Это описание второй карты."
+    },
+    "image": "/images/card2.jpg"
+  }
+]
