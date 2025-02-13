@@ -22,7 +22,7 @@ export default function Cards() {
     >
       <div className="px-8">
         <div className="flex justify-between items-center gap-2 pt-2 border-b-[1px] border-b-[##EEEEEEFF]">
-          {filterData.map((item, index) => {
+          {filterData.map((item) => {
             return (
               <h4
                 key={item.id}
