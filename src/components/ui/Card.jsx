@@ -4,7 +4,7 @@ import Image from "next/image";
 import layer from "../../assets/icons/layer.svg";
 import save from "../../assets/icons/save.svg";
 import charts from "../../assets/icons/chart.svg";
-import shopping from "../../assets/icons/shopping.svg";
+import shopping from "../../assets/icons/blue_shopping.svg";
 export default function Card({
   title,
   description,

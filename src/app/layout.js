@@ -6,12 +6,40 @@ import "./globals.css";
 import TopHeader from "@/components/TopHeader";
 import MainHeader from "@/components/MainHeader";
 import BottomHeader from "@/components/BottomHeader";
-import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+
+const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
 
 export default function RootLayout({ children }) {
   const { i18n } = useTranslation();
+  const [selectedText, setSelectedText] = useState("");
 
+  useEffect(() => {
+    const handleMouseUp = () => {
+      const text = window.getSelection().toString();
+      if (text) {
+        setSelectedText(text);
+      }
+    };
+
+    document.addEventListener("mouseup", handleMouseUp);
+
+    return () => {
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, []);
+  const speakText = () => {
+    console.log(selectedText);
+
+    if (!selectedText) {
+      alert("Iltimos, matnni belgilang!");
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(selectedText);
+    speechSynthesis.speak(utterance);
+  };
   return (
     <html lang={i18n.language}>
       <head>
@@ -33,7 +61,7 @@ export default function RootLayout({ children }) {
           <BottomHeader />
         </header>
         <main>{children}</main>
-        <Sidebar />
+        <Sidebar speakText={speakText} />
         <Footer />
       </body>
     </html>
