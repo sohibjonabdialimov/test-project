@@ -14,7 +14,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        arial: ["Arial", "sans-serif"], // Arial shriftini qo'shish
+        arial: ["Arial", "sans-serif"], 
+      },
+      boxShadow: {
+        custom: "0 12px 24px rgba(44, 39, 56, 0.02)",
       },
     },
   },

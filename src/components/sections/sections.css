@@ -1,0 +1,16 @@
+.achievement_list li{
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.achievement_list li::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 6px;
+  height: 6px;
+  background-color: #333333FF;
+  border-radius: 50%;
+
+}

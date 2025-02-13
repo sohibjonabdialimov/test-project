@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import cardsData from "@/data/cards.json";
 import Hero from "@/components/sections/Hero";
 import Category from "@/components/sections/Category";
+import Brands from "@/components/sections/Brands";
+import Achievements from "@/components/sections/Achievements";
 
 export default function HomePage() {
   const { i18n, t } = useTranslation();
@@ -15,6 +17,10 @@ export default function HomePage() {
     <div className="py-12">
       <Hero />
       <Category />
+      <Brands />
+      <Achievements />
+    
+    <div className="mb-64"></div>
       <h1 className="text-2xl font-bold">{t("welcome")}</h1>
       <p>{t("description")}</p>
       <TextToSpeech />

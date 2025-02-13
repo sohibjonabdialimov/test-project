@@ -12,7 +12,7 @@ export default function BottomHeader() {
     <nav className="w-[1400px] mx-auto px-3 flex justify-between items-center h-[60px] gap-[50px]">
       <div className="flex items-center gap-3">
         <div className="flex items-center cursor-pointer justify-center gap-3 bg-[#0054AE] text-[#fff] rounded-[9px] p-[8px_20px]">
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
           <p className="font-arial text-sm font-bold">Каталог товаров</p>
         </div>
 

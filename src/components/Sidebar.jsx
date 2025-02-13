@@ -16,7 +16,7 @@ export default function Sidebar() {
     setLanguage(lng);
   };
   return (
-    <sidebar className="fixed rounded-md w-12 bottom-0 right-0 h-[73dvh] bg-[#fafafaff] shadow-[0px_10px_36px_0_#0000001A] ">
+    <aside className="fixed rounded-md w-12 bottom-0 right-0 h-[73dvh] bg-[#fafafaff] shadow-[0px_10px_36px_0_#0000001A] ">
       <div className="py-2">
         <Image src={logo} alt="logo" />
       </div>
@@ -40,6 +40,6 @@ export default function Sidebar() {
           <p className="text-[#555555] text-xs font-normal">Ru</p>
         </div>
       </div>
-    </sidebar>
+    </aside>
   );
 }

@@ -3,13 +3,13 @@ import { useState } from "react";
 
 const TextToSpeech = () => {
   const [selectedText, setSelectedText] = useState("");
-
+  console.log(selectedText);
+  
   // Foydalanuvchi tanlagan matnni olish
   const getSelectedText = () => {
     const text = window.getSelection().toString();
     setSelectedText(text);
   };
-
   // Tanlangan matnni ovoz chiqarish
   const speakText = () => {
     if (!selectedText) {
@@ -24,8 +24,7 @@ const TextToSpeech = () => {
     <div>
       <h2 className="text-xl font-bold">Matnni tanlab ovoz chiqarish</h2>
       <p className="border p-4 my-2" onMouseUp={getSelectedText}>
-        Ushbu paragraflardan bir qismini tanlang va tugmani bosing. 
-        Next.js bilan SpeechSynthesis API ishlashini tekshirish uchun.
+      On our news site and in classrooms across the world, News Decoder informs, connects and empowers young people to be engaged citizens and changemakers locally, nationally and globally.
       </p>
       <button
         onClick={speakText}

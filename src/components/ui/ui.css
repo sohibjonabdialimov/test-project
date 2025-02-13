@@ -1,0 +1,12 @@
+.bg_url{
+  background-image: url("../../assets/icons/bg.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 60%;
+}
+.final_bg{
+  background-image: url("../../assets/icons/overlay.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 80%;
+}
