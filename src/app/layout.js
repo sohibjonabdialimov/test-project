@@ -1,32 +1,38 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../lib/i18n";
 import "./globals.css";
+import TopHeader from "@/components/TopHeader";
+import MainHeader from "@/components/MainHeader";
+import BottomHeader from "@/components/BottomHeader";
+import Sidebar from "@/components/Sidebar";
 
 export default function RootLayout({ children }) {
-  const { i18n, t } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
-  
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setLanguage(lng);
-  };
+  const { i18n } = useTranslation();
 
   return (
-    <html lang={language}>
+    <html lang={i18n.language}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+
+        <title>Sector Technology</title>
+      </head>
       <body>
-        <nav className="p-4 flex justify-between bg-gray-200">
-          <div>{t("welcome")}</div>
-          <div>
-            <button onClick={() => changeLanguage("uz")} className="mr-2">
-              🇺🇿 UZ
-            </button>
-            <button onClick={() => changeLanguage("ru")}>🇷🇺 RU</button>
-          </div>
-        </nav>
+        <div className="sticky top-0 z-10 bg-[#fff] shadow-[0_5px_30px_0_#00000026]">
+          <TopHeader />
+          <MainHeader />
+          <hr />
+          <BottomHeader />
+        </div>
         <main>{children}</main>
+        <Sidebar />
       </body>
     </html>
   );

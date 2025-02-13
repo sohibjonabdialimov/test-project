@@ -9,7 +9,7 @@
       "uz": "Bu birinchi karta tavsifi.",
       "ru": "Это описание первой карты."
     },
-    "image": "/images/card1.jpg"
+    "image": "/images/card1.png"
   },
   {
     "id": 2,
@@ -21,6 +21,6 @@
       "uz": "Bu ikkinchi karta tavsifi.",
       "ru": "Это описание второй карты."
     },
-    "image": "/images/card2.jpg"
+    "image": "/images/card2.png"
   }
 ]

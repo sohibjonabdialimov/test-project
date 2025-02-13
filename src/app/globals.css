@@ -1,4 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Wix Madefor Text", serif;
+  background-color: #fafafaff;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ant-select-selector{
+  border: none !important;
+}
+.ant-select{
+  font-weight: 700 !important;
+}
