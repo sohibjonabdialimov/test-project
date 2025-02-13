@@ -16,7 +16,7 @@ export default function Sidebar() {
     setLanguage(lng);
   };
   return (
-    <aside className="fixed rounded-md w-12 bottom-0 right-0 h-[73dvh] bg-[#fafafaff] shadow-[0px_10px_36px_0_#0000001A] ">
+    <aside className="fixed rounded-sm w-12 bottom-2 right-0 h-[73dvh] bg-[#fafafaff] shadow-[0px_10px_36px_0_#0000001A] ">
       <div className="py-2">
         <Image src={logo} alt="logo" />
       </div>

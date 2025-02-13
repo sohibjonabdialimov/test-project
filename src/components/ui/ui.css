@@ -3,10 +3,20 @@
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 60%;
+  overflow: hidden;
 }
 .final_bg{
   background-image: url("../../assets/icons/overlay.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 80%;
+}
+.bg_url img{
+  transition: transform 0.1s ease-in;
+}
+.bg_url:hover img{
+  transform: scale(1.1);
+}
+.calc_height{
+  height: calc(100% - 201px);
 }

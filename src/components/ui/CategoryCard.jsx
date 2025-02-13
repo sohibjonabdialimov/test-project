@@ -6,7 +6,7 @@ export default function CategoryCard({ id, name, count, image }) {
   return (
     <>
       {id == 12 ? (
-        <div className="final_bg rounded-[10px] shadow-md bg-[#FFFFFF] relative">
+        <div className="final_bg cursor-pointer rounded-[10px] shadow-md bg-[#FFFFFF] relative">
           <div className="relative p-[20px_30px] w-[150px] h-[100px]">
             <i className="fa-solid fa-arrow-right text-xl"></i>
           </div>
@@ -20,7 +20,7 @@ export default function CategoryCard({ id, name, count, image }) {
           </div>
         </div>
       ) : (
-        <div className="bg_url rounded-[10px] shadow-md bg-[#FFFFFF] relative">
+        <div className="bg_url cursor-pointer rounded-[10px] shadow-md bg-[#FFFFFF] relative">
           <div className="relative w-[150px] h-auto">
             <Image
               src={image}

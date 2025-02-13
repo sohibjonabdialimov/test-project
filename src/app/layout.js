@@ -7,6 +7,7 @@ import TopHeader from "@/components/TopHeader";
 import MainHeader from "@/components/MainHeader";
 import BottomHeader from "@/components/BottomHeader";
 import Sidebar from "@/components/Sidebar";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }) {
   const { i18n } = useTranslation();
@@ -25,14 +26,15 @@ export default function RootLayout({ children }) {
         <title>Sector Technology</title>
       </head>
       <body>
-        <div className="sticky top-0 z-10 bg-[#fff] shadow-[0_5px_30px_0_#00000026]">
+        <header className="sticky top-0 z-10 bg-[#fff] shadow-[0_5px_30px_0_#00000026]">
           <TopHeader />
           <MainHeader />
           <hr />
           <BottomHeader />
-        </div>
+        </header>
         <main>{children}</main>
         <Sidebar />
+        <Footer />
       </body>
     </html>
   );

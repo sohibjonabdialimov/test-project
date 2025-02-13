@@ -3,14 +3,11 @@ import { useState } from "react";
 
 const TextToSpeech = () => {
   const [selectedText, setSelectedText] = useState("");
-  console.log(selectedText);
-  
-  // Foydalanuvchi tanlagan matnni olish
+
   const getSelectedText = () => {
     const text = window.getSelection().toString();
     setSelectedText(text);
   };
-  // Tanlangan matnni ovoz chiqarish
   const speakText = () => {
     if (!selectedText) {
       alert("Iltimos, matnni belgilang!");
@@ -24,7 +21,9 @@ const TextToSpeech = () => {
     <div>
       <h2 className="text-xl font-bold">Matnni tanlab ovoz chiqarish</h2>
       <p className="border p-4 my-2" onMouseUp={getSelectedText}>
-      On our news site and in classrooms across the world, News Decoder informs, connects and empowers young people to be engaged citizens and changemakers locally, nationally and globally.
+        On our news site and in classrooms across the world, News Decoder
+        informs, connects and empowers young people to be engaged citizens and
+        changemakers locally, nationally and globally.
       </p>
       <button
         onClick={speakText}
