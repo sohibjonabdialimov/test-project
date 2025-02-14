@@ -60,7 +60,7 @@ export default function Cards() {
           ))
         ) : (
           <p className="col-span-4 text-center text-gray-500">
-            Ma'lumot topilmadi
+            Ma&apos;lumot topilmadi
           </p>
         )}
       </div>

@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "uz",
-    lng: "uz", // Default til
+    lng: "uz", 
     interpolation: { escapeValue: false },
     resources: {
       uz: {

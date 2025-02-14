@@ -9,6 +9,7 @@ import BottomHeader from "@/components/BottomHeader";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import { message } from "antd";
 
 const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   const { i18n } = useTranslation();
   const [selectedText, setSelectedText] = useState("");
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
     const handleMouseUp = () => {
@@ -39,7 +41,11 @@ export default function RootLayout({ children }) {
   }, [i18n]);
   const speakText = () => {
     if (!selectedText) {
-      alert("Iltimos, matnni belgilang!");
+      messageApi.open({
+        type: "error",
+        content: "Iltimos, matnni belgilang!",
+      });
+      // alert("Iltimos, matnni belgilang!");
       return;
     }
     const utterance = new SpeechSynthesisUtterance(selectedText);
@@ -68,6 +74,7 @@ export default function RootLayout({ children }) {
         <title>Sector Technology</title>
       </head>
       <body>
+        {contextHolder}
         <header className="sticky top-0 z-10 bg-[#fff] shadow-[0_5px_30px_0_#00000026]">
           <TopHeader />
           <MainHeader />
