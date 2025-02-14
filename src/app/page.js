@@ -1,5 +1,3 @@
-"use client";
-
 import Category from "@/components/sections/Category";
 import Brands from "@/components/sections/Brands";
 import Achievements from "@/components/sections/Achievements";

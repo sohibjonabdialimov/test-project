@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
     return () => {
       document.removeEventListener("mouseup", handleMouseUp);
     };
-  }, []);
+  }, [i18n]);
   const speakText = () => {
     if (!selectedText) {
       alert("Iltimos, matnni belgilang!");
