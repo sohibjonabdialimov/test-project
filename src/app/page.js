@@ -3,10 +3,9 @@
 import Category from "@/components/sections/Category";
 import Brands from "@/components/sections/Brands";
 import Achievements from "@/components/sections/Achievements";
-import dynamic from "next/dynamic";
 import ExtraSection from "@/components/sections/ExtraSection";
 import Cards from "@/components/sections/Cards";
-const Hero = dynamic(() => import("../components/sections/Hero"));
+import Hero from "@/components/sections/Hero";
 
 export default function HomePage() {
   return (
