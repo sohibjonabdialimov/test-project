@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [language, setLanguage] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("lang") || i18n.language || "uz";
@@ -72,39 +72,67 @@ export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
             </div>
           </div>
           <div className="w-full flex justify-center flex-col items-center gap-4 mt-6">
-            <div className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+            <div className="group relative w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={18} height={18} src={save} alt="save" />
+              <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {t("save")}
+                <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+              </div>
             </div>
-            <div className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+            <div className="relative group w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={20} height={20} src={chart} alt="chart" />
+              <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {t("chart")}
+                <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+              </div>
             </div>
-            <div className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+            <div className="relative group w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={22} height={22} src={share} alt="share" />
+              <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {t("share")}
+                <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+              </div>
             </div>
-            <div className="w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+            <div className="relative group w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={14} height={14} src={chat} alt="chat" />
+              <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {t("open_chat")}
+                <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+              </div>
             </div>
             <div
               onClick={isSpeaking ? stopSpeaking : speakText}
-              className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer"
+              className="relative group w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer"
             >
               <i
                 className={`fa-solid ${
                   isSpeaking ? "fa-volume-xmark" : "fa-volume-high"
                 }`}
               ></i>
+              <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                {t("voice")}
+                <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+              </div>
             </div>
           </div>
         </div>
         <div className="w-full flex justify-center flex-col items-center gap-4 pb-3">
-          <div className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+          <div className="relative group w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
             <Image width={20} height={20} src={right} alt="right" />
+            <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              {t("secret")}
+              <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+            </div>
           </div>
           <div
             onClick={scrollToTop}
-            className="w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer"
+            className="relative group w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer"
           >
             <Image width={10} height={14} src={top} alt="top" />
+            <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              {t("top")}
+              <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+            </div>
           </div>
         </div>
       </div>

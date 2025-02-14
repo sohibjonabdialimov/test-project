@@ -7,6 +7,11 @@
   "chart": "Taqqoslash",
   "user": "Foydalanuvchi",
   "shopping": "Savat",
+  "share": "Ulashish",
+  "open_chat": "Chat",
+  "voice": "Ovoz",
+  "secret": "Panelni yashirish",
+  "top": "Yuqoriga",
   "product_catalog": "Mahsulotlar katalogi",
   "buyers": "Xaridorlar",
   "services": "Xizmatlar",
@@ -75,9 +80,5 @@
   "footer_4_3": "Toshkent, Chilonzor",
 
   "footer_b_1": "Maxfiylik siyosati",
-  "footer_b_2": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
-
-
-  "welcome": "Добро пожаловать!",
-  "description": "Это многоязычный сайт с Next.js App Router."
+  "footer_b_2": "Shaxsiy ma'lumotlarni qayta ishlash siyosati"
 }
