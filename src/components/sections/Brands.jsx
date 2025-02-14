@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import b1 from "../../assets/images/b1.png";
 import b2 from "../../assets/images/b2.png";
 import b3 from "../../assets/images/b3.png";
@@ -15,11 +16,11 @@ const data = [
   { id: 6, img: null },
 ];
 export default function Brands() {
-
+  const { t } = useTranslation();
   return (
     <section className="category w-[1400px] mx-auto mb-16">
       <h2 className="text-[#333333] text-[32px] leading-8 font-arial mb-8 font-bold">
-        Популярные бренды
+      {t("popular_brends")}
       </h2>
       <div className="grid grid-cols-6 justify-between gap-10">
         {data.map((item) => (

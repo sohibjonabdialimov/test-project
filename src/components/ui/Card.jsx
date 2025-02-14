@@ -5,6 +5,7 @@ import layer from "../../assets/icons/layer.svg";
 import save from "../../assets/icons/save.svg";
 import charts from "../../assets/icons/chart.svg";
 import shopping from "../../assets/icons/blue_shopping.svg";
+import { useTranslation } from "react-i18next";
 export default function Card({
   title,
   description,
@@ -13,6 +14,7 @@ export default function Card({
   count,
   price,
 }) {
+  const { t } = useTranslation();
   return (
     <div className="border rounded-lg p-2">
       <div className="relative">
@@ -25,25 +27,43 @@ export default function Card({
         />
         <div className="absolute top-1.5 left-0 border-[1px] border-[#6AB04C] rounded-[5px] bg-[#F3F9F1] p-[2px_10px]">
           <p className="text-[#6AB04C] font-medium text-sm text-center">
-            Новинка
+            {t("new")}
           </p>
         </div>
       </div>
 
       <div className="flex flex-col justify-between gap-1 calc_height pt-3 pb-5">
         <div className="flex justify-between items-start">
-          <h3 className="text-sm font-normal text-[#3B3B3B] w-[90%]">{description}</h3>
-          <Image className="cursor-pointer" src={layer} alt={"Layer icon"} width={17} height={15} />
+          <h3 className="text-sm font-normal text-[#3B3B3B] w-[90%]">
+            {description}
+          </h3>
+          <Image
+            className="cursor-pointer"
+            src={layer}
+            alt={"Layer icon"}
+            width={17}
+            height={15}
+          />
         </div>
 
         <div>
           <div className="flex justify-between items-center mb-3">
             <p className="text-xs font-normal text-[#929292]">{code}</p>
-            <Image className="cursor-pointer" src={layer} alt={"Layer icon"} width={17} height={15} />
+            <Image
+              className="cursor-pointer"
+              src={layer}
+              alt={"Layer icon"}
+              width={17}
+              height={15}
+            />
           </div>
-          <p className="text-[#0054AE] text-sm font-normal mb-6">В наличии: {count}</p>
-          <div className="flex items-center justify-between gap-2">
-            <h4 className="text-[#3B3B3B] text-[19px] font-semibold">{price} сум</h4>
+          <p className="text-[#0054AE] text-sm font-normal mb-6">
+            {t("exist")}: {count}
+          </p>
+          <div className="flex items-center justify-between gap-1">
+            <h4 className="text-[#3B3B3B] text-[19px] font-medium">
+              {price} {t("money")}
+            </h4>
             <Image
               className="aspect-square cursor-pointer"
               src={save}

@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": {
-      "uz": "Фиксированные коммутаторы",
+      "uz": "Ruxsat etilgan kalitlar",
       "ru": "Фиксированные коммутаторы"
     },
     "count": {
-      "uz": "784 товара",
+      "uz": "784 ta mahsulot",
       "ru": "784 товара"
     },
     "image": "/images/category1.png"
@@ -14,11 +14,11 @@
   {
     "id": 2,
     "name": {
-      "uz": "On-line ИБП (UPS)",
+      "uz": "Onlayn UPS",
       "ru": "On-line ИБП (UPS)"
     },
     "count": {
-      "uz": "93 товара",
+      "uz": "93 ta mahsulot",
       "ru": "93 товара"
     },
     "image": "/images/category2.png"
@@ -26,11 +26,11 @@
   {
     "id": 3,
     "name": {
-      "uz": "IP Видеокамеры",
+      "uz": "IP video kameralar",
       "ru": "IP Видеокамеры"
     },
     "count": {
-      "uz": "99 товаров",
+      "uz": "99 ta mahsulot",
       "ru": "99 товаров"
     },
     "image": "/images/category1.png"
@@ -38,11 +38,11 @@
   {
     "id": 4,
     "name": {
-      "uz": "Маршрутизаторы для корпоративных клиентов",
-      "ru": "Маршрутизаторы для корпоративных клиентов"
+      "uz": "FTTH/FTTx optik kabeli",
+      "ru": "Оптический кабель FTTH/FTTx"
     },
     "count": {
-      "uz": "121 товар",
+      "uz": "121 ta mahsulot",
       "ru": "121 товар"
     },
     "image": "/images/category2.png"
@@ -50,11 +50,11 @@
   {
     "id": 5,
     "name": {
-      "uz": "Фиксированные коммутаторы",
-      "ru": "Фиксированные коммутаторы"
+      "uz": "Optik tolali payvandlash mashinalari",
+      "ru": "Сварочные аппараты для оптоволокна"
     },
     "count": {
-      "uz": "784 товара",
+      "uz": "784 ta mahsulot",
       "ru": "784 товара"
     },
     "image": "/images/category1.png"
@@ -62,11 +62,11 @@
   {
     "id": 6,
     "name": {
-      "uz": "On-line ИБП (UPS)",
-      "ru": "On-line ИБП (UPS)"
+      "uz": "Rackmount serverlar",
+      "ru": "Стоечные серверы"
     },
     "count": {
-      "uz": "93 товара",
+      "uz": "93 ta mahsulot",
       "ru": "93 товара"
     },
     "image": "/images/category2.png"
@@ -74,11 +74,11 @@
   {
     "id": 7,
     "name": {
-      "uz": "IP Видеокамеры",
-      "ru": "IP Видеокамеры"
+      "uz": "SFP moduli",
+      "ru": "Модули SFP"
     },
     "count": {
-      "uz": "99 товаров",
+      "uz": "99 ta mahsulot",
       "ru": "99 товаров"
     },
     "image": "/images/category1.png"
@@ -86,11 +86,11 @@
   {
     "id": 8,
     "name": {
-      "uz": "Маршрутизаторы для корпоративных клиентов",
-      "ru": "Маршрутизаторы для корпоративных клиентов"
+      "uz": "Optik simlar",
+      "ru": "Патч-корды оптические"
     },
     "count": {
-      "uz": "121 товар",
+      "uz": "121 ta mahsulot",
       "ru": "121 товар"
     },
     "image": "/images/category2.png"
@@ -98,11 +98,11 @@
   {
     "id": 9,
     "name": {
-      "uz": "On-line ИБП (UPS)",
-      "ru": "On-line ИБП (UPS)"
+      "uz": "Telekommunikatsiya devor shkaflari",
+      "ru": "Телекоммуникационные настенные шкафы"
     },
     "count": {
-      "uz": "93 товара",
+      "uz": "93 ta mahsulot",
       "ru": "93 товара"
     },
     "image": "/images/category2.png"
@@ -110,11 +110,11 @@
   {
     "id": 10,
     "name": {
-      "uz": "IP Видеокамеры",
-      "ru": "IP Видеокамеры"
+      "uz": "Avtomatlashtirish va monitoring",
+      "ru": "Автоматизация и мониторинг"
     },
     "count": {
-      "uz": "99 товаров",
+      "uz": "99 ta mahsulot",
       "ru": "99 товаров"
     },
     "image": "/images/category1.png"
@@ -122,8 +122,8 @@
   {
     "id": 11,
     "name": {
-      "uz": "Маршрутизаторы для корпоративных клиентов",
-      "ru": "Маршрутизаторы для корпоративных клиентов"
+      "uz": "Optik simlar",
+      "ru": "Патч-корды оптические"
     },
     "count": {
       "uz": "121 товар",
@@ -134,11 +134,11 @@
   {
     "id": 12,
     "name": {
-      "uz": "Смотреть весь каталог",
+      "uz": "To'liq katalogni ko'rish",
       "ru": "Смотреть весь каталог"
     },
     "count": {
-      "uz": "7 812 товаров",
+      "uz": "7 812 ta mahsulot",
       "ru": "7 812 товаров"
     }
   }

@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import "./sections.css";
+import { useTranslation } from "react-i18next";
 export default function Achievements() {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   return (
     <section
@@ -11,15 +13,10 @@ export default function Achievements() {
     >
       <div className="p-6 bg-white rounded-lg">
         <p className="text-[#333333] text-lg font-normal">
-          Компания «НАГ» – надежный и честный партнер, предлагающий компаниям
-          телеком-отрасли, промышленности и бизнесу эффективные решения и
-          оборудование для решения широкого круга задач. Мы осуществляем оптовую
-          и розничную продажу компонентов и программно-аппаратных комплексов
-          (ПАК) для развертывания сетевой инфраструктуры, ее модернизации и
-          масштабирования.
+        {t("achievement_main_text")}
         </p>
         <h2 className="text-[26px] leading-[32px] font-bold text-center mb-4 mt-1">
-          Наши достижения
+        {t("achievement_title")}
         </h2>
 
         <ul
@@ -27,65 +24,51 @@ export default function Achievements() {
             expanded ? "max-h-[500px] opacity-100" : "max-h-[150px] opacity-75"
           }`}
         >
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-80"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-90"}`}>
             <p className="text-[#333333] text-base">
-              На нашем официальном сайте мы продаём оборудование, как под
-              собственными торговыми марками, так и разработанное ведущими
-              международными производителями телекоммуникационного оборудования.
+            {t("achievement_text_1")}
+            </p>
+          </li>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-75"}`}>
+            <p className="text-[#333333] text-base">
+            {t("achievement_text_2")}
             </p>
           </li>
           <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-60"}`}>
             <p className="text-[#333333] text-base">
-              В магазине «NAG» насчитывается более тысячи брендов и свыше 20
-              тысяч наименований товаров.
+            {t("achievement_text_3")}
             </p>
           </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-40"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-45"}`}>
             <p className="text-[#333333] text-base">
-              Собственная торговая марка SNR включает широкий ассортимент
-              оборудования и комплектующих для развертывания проводных сетей
-              передачи данных, систем безопасности и видеонаблюдения,
-              беспроводных сетей и ЦОД.
+            {t("achievement_text_4")}
             </p>
           </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-20"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-30"}`}>
             <p className="text-[#333333] text-base">
-              Дочерняя компания «НАГТЕХ», созданная несколько лет назад,
-              разрабатывает и производит телекоммуникационное оборудование,
-              способное заместить дорогие зарубежные аналоги.
+            {t("achievement_text_5")}
             </p>
           </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-80"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-15"}`}>
             <p className="text-[#333333] text-base">
-              На нашем официальном сайте мы продаём оборудование, как под
-              собственными торговыми марками, так и разработанное ведущими
-              международными производителями телекоммуникационного оборудования.
+            {t("achievement_text_6")}
             </p>
           </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-60"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-15"}`}>
             <p className="text-[#333333] text-base">
-              В магазине «NAG» насчитывается более тысячи брендов и свыше 20
-              тысяч наименований товаров.
+            {t("achievement_text_7")}
             </p>
           </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-80"}`}>
+          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-15"}`}>
             <p className="text-[#333333] text-base">
-              На нашем официальном сайте мы продаём оборудование, как под
-              собственными торговыми марками, так и разработанное ведущими
-              международными производителями телекоммуникационного оборудования.
-            </p>
-          </li>
-          <li className={`transition-opacity duration-300 ${expanded ? "opacity-100" : "opacity-60"}`}>
-            <p className="text-[#333333] text-base">
-              В магазине «NAG» насчитывается более тысячи брендов и свыше 20
-              тысяч наименований товаров.
+            {t("achievement_text_8")}
             </p>
           </li>
         </ul>
         <hr/>
 
         <button className="text-[#0054AE] mt-2 text-base font-normal" onClick={() => setExpanded(!expanded)} type="button">
-        {expanded ? "Скрыть" : "Показать полный текст"}
+        {expanded ? t("close") : t("open")}
         </button>
       </div>
     </section>

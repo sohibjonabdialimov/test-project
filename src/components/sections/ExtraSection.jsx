@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function ExtraSection() {
+  const { t } = useTranslation();
   return (
     <article className="w-[25dvw]">
       <div
@@ -11,7 +13,7 @@ export default function ExtraSection() {
       >
         <div className="flex items-center gap-4 py-6 px-5 bg-[#fff] rounded-[10px]">
           <h1 className="text-[26px] leading-[32px] font-normal text-[#555555]">
-            Новости{" "}
+            {t("news")}
           </h1>
           <i className="fa-solid fa-angle-right text-[#555555] text-xs"></i>
         </div>
@@ -20,11 +22,11 @@ export default function ExtraSection() {
             href={"/"}
             className="inline-block hover:underline text-sm text-[#333333] font-normal mb-3"
           >
-            Новая серия сварочных аппаратов SNR- FS-60x уже на складе
+            {t("news_info_1")}
           </Link>
           <div className="flex items-center gap-4">
             <i className="fa-regular fa-clock text-[#A3A3A3] text-sm"></i>
-            <p className="text-[#A3A3A3] text-xs">18 апреля 2024 г.</p>
+            <p className="text-[#A3A3A3] text-xs">{t("news_date_1")}</p>
           </div>
         </div>
         <div className="bg-[#fff] py-6 px-5 rounded-[10px]">
@@ -32,11 +34,11 @@ export default function ExtraSection() {
             href={"/"}
             className="inline-block hover:underline text-sm text-[#333333] font-normal mb-3"
           >
-            Читайте статью: Что такое PoE и для чего он нужен?
+            {t("news_info_2")}
           </Link>
           <div className="flex items-center gap-4">
             <i className="fa-regular fa-clock text-[#A3A3A3] text-sm"></i>
-            <p className="text-[#A3A3A3] text-xs">29 марта 2024 г.</p>
+            <p className="text-[#A3A3A3] text-xs">{t("news_date_2")}</p>
           </div>
         </div>
       </div>
@@ -46,26 +48,28 @@ export default function ExtraSection() {
       >
         <div className="py-6 px-5 bg-[#fff] rounded-[10px]">
           <h1 className="text-[26px] leading-[32px] font-normal text-[#555555]">
-            Наши проекты
+            {t("our_projects")}
           </h1>
         </div>
         <ul className="bg-[#fafafaff] py-6 px-7">
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>snr.systems</span>
+              <span className="group-hover:underline">snr.systems</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal"
+              className="group flex gap-2 items-center text-sm text-[#333333] font-normal"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Конфигураторы</span>
+              <span className="group-hover:underline">
+                {t("our_project_info")}
+              </span>
             </Link>
           </li>
         </ul>
@@ -76,81 +80,81 @@ export default function ExtraSection() {
       >
         <div className="py-6 px-5 bg-[#fff] rounded-[10px]">
           <h1 className="text-[26px] leading-[32px] font-normal text-[#555555]">
-            Как мы работаем
+            {t("how_to_work")}
           </h1>
         </div>
         <ul className="bg-[#fafafaff] py-6 px-7">
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Способы оплаты</span>
+              <span className="group-hover:underline">{t("work_1")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Условия доставки</span>
+              <span className="group-hover:underline">{t("work_2")}</span>
             </Link>
           </li>
           <li>
             {" "}
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Гарантийное обслуживание</span>
+              <span className="group-hover:underline">{t("work_3")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Возврат товара</span>
+              <span className="group-hover:underline">{t("work_4")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Вопросы и ответы</span>
+              <span className="group-hover:underline">{t("work_5")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Техническая поддержка</span>
+              <span className="group-hover:underline">{t("work_6")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal mb-3"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal mb-3"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>База знаний</span>
+              <span className="group-hover:underline">{t("work_7")}</span>
             </Link>
           </li>
           <li>
             <Link
-              className="flex gap-2 items-center hover:underline text-sm text-[#333333] font-normal"
+              className="flex gap-2 items-center group text-sm text-[#333333] font-normal"
               href={"/"}
             >
               <i className="fa-solid fa-angle-right text-[#333333] text-xs"></i>
-              <span>Конфигураторы</span>
+              <span className="group-hover:underline">{t("work_8")}</span>
             </Link>
           </li>
         </ul>

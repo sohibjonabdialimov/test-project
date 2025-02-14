@@ -6,7 +6,7 @@
       "ru": "Первая карта"
     },
     "description": {
-      "uz": "Bu birinchi karta tavsifi.",
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
       "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
     },
     "count": {
@@ -15,7 +15,8 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 1
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 2
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 2
   },
   {
     "id": 4,
@@ -69,7 +72,8 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 1
   },
   {
     "id": 5,
@@ -87,7 +91,8 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 3
   },
   {
     "id": 6,
@@ -105,7 +110,8 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 4
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 4
   },
   {
     "id": 8,
@@ -141,7 +148,8 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 5
   },
   {
     "id": 9,
@@ -150,7 +158,7 @@
       "ru": "Первая карта"
     },
     "description": {
-      "uz": "Bu birinchi karta tavsifi.",
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
       "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
     },
     "count": {
@@ -159,10 +167,87 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 1
   },
   {
     "id": 10,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 5
+  },
+  {
+    "id": 11,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 4
+  },
+  {
+    "id": 12,
+    "title": {
+      "uz": "Chaqmoqlardan himoya Ethernet SNR-SPNet-BP1131-IP65",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 1
+  },
+  {
+    "id": 13,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 1
+  },
+  {
+    "id": 14,
     "title": {
       "uz": "Ikkinchi karta",
       "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
@@ -177,10 +262,11 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 2
   },
   {
-    "id": 11,
+    "id": 15,
     "title": {
       "uz": "Birinchi karta",
       "ru": "Первая карта"
@@ -195,10 +281,11 @@
     },
     "price": "911 374",
     "code": "FTP4CAT5e PVC-2414",
-    "image": "/images/card1.png"
+    "image": "/images/card1.png",
+    "category_id": 2
   },
   {
-    "id": 12,
+    "id": 16,
     "title": {
       "uz": "Ikkinchi karta",
       "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
@@ -213,6 +300,273 @@
     },
     "price": "259 374",
     "code": "SNR-SPNet-BP1131-IP65",
-    "image": "/images/card2.png"
+    "image": "/images/card2.png",
+    "category_id": 1
+  },
+  {
+    "id": 17,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 3
+  },
+  {
+    "id": 18,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 4
+  },
+  {
+    "id": 19,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 4
+  },
+  {
+    "id": 20,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 5
+  },
+  {
+    "id": 21,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 1
+  },
+  {
+    "id": 22,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 4
+  },
+  {
+    "id": 23,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 5
+  },
+  {
+    "id": 24,
+    "title": {
+      "uz": "Chaqmoqlardan himoya Ethernet SNR-SPNet-BP1131-IP65",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 1
+  },
+  {
+    "id": 25,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 5
+  },
+  {
+    "id": 26,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 1
+  },
+  {
+    "id": 27,
+    "title": {
+      "uz": "Ikkinchi karta",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 3
+  },
+  {
+    "id": 28,
+    "title": {
+      "uz": "Birinchi karta",
+      "ru": "Первая карта"
+    },
+    "description": {
+      "uz": "Buralgan juftlik FTP cat.5E, 4 juft, kulrang PVX, 305 m lasan, ichki o'rnatish uchun, ekranlangan",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "911 374",
+    "code": "FTP4CAT5e PVC-2414",
+    "image": "/images/card1.png",
+    "category_id": 3
+  },
+  {
+    "id": 29,
+    "title": {
+      "uz": "Chaqmoqlardan himoya Ethernet SNR-SPNet-BP1131-IP65",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 3
+  },
+  {
+    "id": 29,
+    "title": {
+      "uz": "Chaqmoqlardan himoya Ethernet SNR-SPNet-BP1131-IP65",
+      "ru": "Грозозащита Ethernet SNR-SPNet-BP1131-IP65"
+    },
+    "description": {
+      "uz": "Bu birinchi karta tavsifi.",
+      "ru": "Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный"
+    },
+    "count": {
+      "uz": "10 dona",
+      "ru": "10 уп"
+    },
+    "price": "259 374",
+    "code": "SNR-SPNet-BP1131-IP65",
+    "image": "/images/card2.png",
+    "category_id": 2
   }
 ]
