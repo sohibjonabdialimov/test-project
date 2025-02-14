@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../assets/icons/s_logo.svg";
+import logo from "../assets/icons/logo.svg";
 import rus from "../assets/icons/rus.svg";
 import uzb from "../assets/icons/uz.svg";
 import save from "../assets/icons/save.svg";
@@ -35,7 +35,7 @@ export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
       i18n.changeLanguage(lang);
       setLanguage(lang);
     }
-  }, []);
+  }, [i18n]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
