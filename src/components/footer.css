@@ -1,0 +1,6 @@
+footer ul li a{
+  transition: padding 0.2s ease-in-out;
+}
+footer ul li a:hover{
+  padding-left: 6px;
+}

@@ -14,14 +14,29 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-export default function Sidebar({speakText}) {
+export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+  const [language, setLanguage] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("lang") || i18n.language || "uz";
+    }
+    return "uz";
+  });
   const pathname = usePathname();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setLanguage(lng);
+    localStorage.setItem("lang", lng);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const lang = localStorage.getItem("lang") || "uz";
+      i18n.changeLanguage(lang);
+      setLanguage(lang);
+    }
+  }, []);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
@@ -69,8 +84,15 @@ export default function Sidebar({speakText}) {
             <div className="w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={14} height={14} src={chat} alt="chat" />
             </div>
-            <div onClick={speakText} className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
-              <i className="fa-solid fa-volume-high"></i>
+            <div
+              onClick={isSpeaking ? stopSpeaking : speakText}
+              className="w-[34px] h-[34px] hover:bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <i
+                className={`fa-solid ${
+                  isSpeaking ? "fa-volume-xmark" : "fa-volume-high"
+                }`}
+              ></i>
             </div>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function Achievements() {
         </ul>
         <hr/>
 
-        <button className="text-[#0054AE] mt-2 text-base font-normal" onClick={() => setExpanded(!expanded)} type="button">
+        <button className="text-[#0054AE] mt-2 text-base font-normal border-[#0054AE] border-b-[1px] border-dashed" onClick={() => setExpanded(!expanded)} type="button">
         {expanded ? t("close") : t("open")}
         </button>
       </div>

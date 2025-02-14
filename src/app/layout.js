@@ -15,6 +15,7 @@ const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
 export default function RootLayout({ children }) {
   const { i18n } = useTranslation();
   const [selectedText, setSelectedText] = useState("");
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
   useEffect(() => {
     const handleMouseUp = () => {
@@ -23,6 +24,12 @@ export default function RootLayout({ children }) {
         setSelectedText(text);
       }
     };
+    const changeLang = async () => {
+      const lang = localStorage.getItem("lang") || "uz";
+      await i18n.changeLanguage(lang);
+    };
+
+    changeLang();
 
     document.addEventListener("mouseup", handleMouseUp);
 
@@ -31,14 +38,28 @@ export default function RootLayout({ children }) {
     };
   }, []);
   const speakText = () => {
-    console.log(selectedText);
-
     if (!selectedText) {
       alert("Iltimos, matnni belgilang!");
       return;
     }
     const utterance = new SpeechSynthesisUtterance(selectedText);
+
+    if (selectedText.match(/[а-яА-ЯёЁ]/)) {
+      utterance.lang = "ru-RU";
+    } else {
+      utterance.lang = "uz-UZ";
+    }
+
+    utterance.onend = () => {
+      setIsSpeaking(false);
+    };
+
     speechSynthesis.speak(utterance);
+    setIsSpeaking(true);
+  };
+  const stopSpeaking = () => {
+    speechSynthesis.cancel();
+    setIsSpeaking(false);
   };
   return (
     <html lang={i18n.language}>
@@ -61,7 +82,11 @@ export default function RootLayout({ children }) {
           <BottomHeader />
         </header>
         <main>{children}</main>
-        <Sidebar speakText={speakText} />
+        <Sidebar
+          speakText={speakText}
+          stopSpeaking={stopSpeaking}
+          isSpeaking={isSpeaking}
+        />
         <Footer />
       </body>
     </html>
