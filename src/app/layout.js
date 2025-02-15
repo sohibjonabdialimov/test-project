@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { message } from "antd";
+import ChatButton from "@/components/ChatButton";
 
 const Sidebar = dynamic(() => import("@/components/Sidebar"), {
   ssr: false,
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
   const [selectedText, setSelectedText] = useState("");
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
+  const [openChat, setOpenChat] = useState(false);
 
   useEffect(() => {
     const handleMouseUp = () => {
@@ -74,6 +76,7 @@ export default function RootLayout({ children }) {
     speechSynthesis.cancel();
     setIsSpeaking(false);
   };
+
   return (
     <html lang={i18n.language}>
       <head>
@@ -91,10 +94,13 @@ export default function RootLayout({ children }) {
         </header>
         <main>{children}</main>
         <Sidebar
+          setOpenChat={setOpenChat}
+          openChat={openChat}
           speakText={speakText}
           stopSpeaking={stopSpeaking}
           isSpeaking={isSpeaking}
         />
+        <ChatButton openChat={openChat} setOpenChat={setOpenChat} />
         <Footer />
       </body>
     </html>

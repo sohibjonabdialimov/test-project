@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
+export default function Sidebar({ speakText, stopSpeaking, isSpeaking, setOpenChat, openChat }) {
   const { i18n, t } = useTranslation();
   const [language, setLanguage] = useState(() => {
     if (typeof window !== "undefined") {
@@ -93,7 +93,7 @@ export default function Sidebar({ speakText, stopSpeaking, isSpeaking }) {
                 <div className="absolute top-1/2 right-0 translate-x-full -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
               </div>
             </div>
-            <div className="relative group w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
+            <div onClick={() => setOpenChat(!openChat)} className="relative group w-[34px] h-[34px] bg-[#EEEEEEFF] rounded-full flex justify-center items-center cursor-pointer">
               <Image width={14} height={14} src={chat} alt="chat" />
               <div className="absolute right-full mr-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
                 {t("open_chat")}

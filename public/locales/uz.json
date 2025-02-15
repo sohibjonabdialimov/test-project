@@ -80,5 +80,12 @@
   "footer_4_3": "Toshkent, Chilonzor",
 
   "footer_b_1": "Maxfiylik siyosati",
-  "footer_b_2": "Shaxsiy ma'lumotlarni qayta ishlash siyosati"
+  "footer_b_2": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
+
+  "chatbot_text": "Xabaringizni kiriting...",
+  "chatbot_title": "Xabaringizni yozing",
+  "chatbot_op": "Operator onlayn!",
+  "chatbot_hello": "Assalomu alaykum! Qanday yordam bera olamiz?",
+  "chatbot_user": "Salom! Menga yordam kerak.",
+  "sent": "Yuborish"
 }
