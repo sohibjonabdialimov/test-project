@@ -79,6 +79,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="/fonts/all.min.css" />
         <title>Sector Technology</title>
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
       </head>
       <body>
         {contextHolder}
