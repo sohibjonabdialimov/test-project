@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 export default function ChatButton({ openChat, setOpenChat }) {
   const { t } = useTranslation();
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(null);
   
   return (
     <div
@@ -50,7 +50,7 @@ export default function ChatButton({ openChat, setOpenChat }) {
         />
         <button
           disabled={!value}
-          className={`ml-2 bg-blue-600 text-white p-2 w-[40px] aspect-square rounded-full ${
+          className={`ml-2 text-white p-2 w-[40px] aspect-square rounded-full ${
             value ? "bg-blue-600" : "bg-[#d8d7d77a]"
           }`}
         >
