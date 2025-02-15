@@ -11,7 +11,12 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { message } from "antd";
 
-const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
+const Sidebar = dynamic(() => import("@/components/Sidebar"), {
+  ssr: false,
+  loading: () => (
+    <div className="fixed bottom-2 right-0 w-12 h-[73dvh] bg-gray-200 animate-pulse"></div>
+  ),
+});
 
 export default function RootLayout({ children }) {
   const { i18n } = useTranslation();

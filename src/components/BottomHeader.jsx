@@ -3,10 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import uzb from "../assets/icons/uz.svg";
-import { Select } from "antd";
 import { useTranslation } from "react-i18next";
-
-const { Option } = Select;
+import CustomSelect from "./ui/CustomSelect";
 
 export default function BottomHeader() {
   const { t } = useTranslation();
@@ -22,7 +20,7 @@ export default function BottomHeader() {
           <div className="cursor-pointer flex items-center gap-2">
             <Image width={20} height={24} src={uzb} alt="Uzbek flag" />
             <p className="text-[#333333] text-sm font-arial font-bold">
-            {t("footer_4_2")}
+              {t("footer_4_2")}
             </p>
           </div>
           <div className="cursor-pointer hover:opacity-50 transition-opacity">
@@ -35,92 +33,42 @@ export default function BottomHeader() {
 
       <ul className="flex justify-between items-center">
         <li className="px-6">
-          <Select
+          <CustomSelect
+            options={[
+              { value: "option1", label: t("buyers") },
+              { value: "option2", label: t("buyers") },
+              { value: "option3", label: t("buyers") },
+            ]}
             defaultValue="option1"
-            className="border-none shadow-none"
-            style={{ width: 140 }}
-            dropdownStyle={{ border: "none", boxShadow: "none" }}
-            optionLabelProp="label"
-          >
-            <Option
-              value="option1"
-              label={<span className="font-normal">{t("buyers")}</span>}
-            >
-              <span className="font-normal">{t("buyers")}</span>
-            </Option>
-            <Option
-              value="option2"
-              label={<span className="font-normal">{t("buyers")}</span>}
-            >
-              <span className="font-normal">{t("buyers")}</span>
-            </Option>
-            <Option
-              value="option3"
-              label={<span className="font-normal">{t("buyers")}</span>}
-            >
-              <span className="font-normal">{t("buyers")}</span>
-            </Option>
-          </Select>
+            onChange={(value) => console.log("Tanlangan:", value)}
+          />
         </li>
         <li className="px-6">
-          <Select
+          <CustomSelect
+            options={[
+              { value: "option1", label: t("services") },
+              { value: "option2", label: t("services") },
+              { value: "option3", label: t("services") },
+            ]}
             defaultValue="option1"
-            className="border-none shadow-none"
-            style={{ width: 120 }}
-            dropdownStyle={{ border: "none", boxShadow: "none" }}
-            optionLabelProp="label"
-          >
-            <Option
-              value="option1"
-              label={<span className="font-normal">{t("services")}</span>}
-            >
-              <span className="font-normal">{t("services")}</span>
-            </Option>
-            <Option
-              value="option2"
-              label={<span className="font-normal">{t("services")}</span>}
-            >
-              <span className="font-normal">{t("services")}</span>
-            </Option>
-            <Option
-              value="option3"
-              label={<span className="font-normal">{t("services")}</span>}
-            >
-              <span className="font-normal">{t("services")}</span>
-            </Option>
-          </Select>
+            onChange={(value) => console.log("Tanlangan:", value)}
+          />
         </li>
         <li className="px-6">
-          <Select
+          <CustomSelect
+            options={[
+              { value: "option1", label: t("about") },
+              { value: "option2", label: t("about") },
+              { value: "option3", label: t("about") },
+            ]}
             defaultValue="option1"
-            className="border-none shadow-none"
-            style={{ width: 150 }}
-            optionLabelProp="label"
-          >
-            <Option
-              value="option1"
-              label={<span className="font-normal">{t("about")}</span>}
-            >
-              <span className="font-normal">{t("about")}</span>
-            </Option>
-            <Option
-              value="option2"
-              label={<span className="font-normal">{t("about")}</span>}
-            >
-              <span className="font-normal">{t("about")}</span>
-            </Option>
-            <Option
-              value="option3"
-              label={<span className="font-normal">{t("about")}</span>}
-            >
-              <span className="font-normal">{t("about")}</span>
-            </Option>
-          </Select>
+            onChange={(value) => console.log("Tanlangan:", value)}
+          />
         </li>
         <li className="px-6">
           <Link className="flex items-center flex-col gap-[1px]" href="/">
             <p className="text-sm text-[#333333] font-arial font-medium text-center">
-            {t("online_chat")}
+              {t("online_chat")}
             </p>
           </Link>
         </li>
