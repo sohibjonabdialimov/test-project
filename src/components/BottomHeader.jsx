@@ -95,7 +95,6 @@ export default function BottomHeader() {
             defaultValue="option1"
             className="border-none shadow-none"
             style={{ width: 150 }}
-            dropdownStyle={{ border: "none", boxShadow: "none" }}
             optionLabelProp="label"
           >
             <Option

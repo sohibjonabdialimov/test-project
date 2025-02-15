@@ -21,14 +21,16 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     const handleMouseUp = () => {
-      const text = window.getSelection().toString();
+      const text = window.getSelection()?.toString();
       if (text) {
         setSelectedText(text);
       }
     };
     const changeLang = async () => {
-      const lang = localStorage.getItem("lang") || "uz";
-      await i18n.changeLanguage(lang);
+      if (typeof window !== "undefined") {
+        const lang = localStorage.getItem("lang") || "uz";
+        await i18n.changeLanguage(lang);
+      }
     };
 
     changeLang();
