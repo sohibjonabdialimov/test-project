@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.0",
+    "add": "^2.0.6",
     "antd": "^5.24.0",
+    "emoji-picker-react": "^4.12.0",
     "i18next": "^24.2.2",
     "next": "14.0.1",
     "next-i18next": "^15.4.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^15.4.0"
+    "react-hook-form": "^7.54.2",
+    "react-i18next": "^15.4.0",
+    "react-icons": "^5.4.0",
+    "react-phone-input-2": "^2.15.1",
+    "yarn": "^1.22.22",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
